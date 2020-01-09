@@ -13,8 +13,8 @@
   define('ADMIN_ADDRESS','blog_admin@mailinator.com');
 
   define('DB_HOSTNAME', 'localhost');
-  define('DB_USER',     'bloguser');
-  define('DB_PASSWORD', 'password');
+  define('DB_USER',     'root');
+  define('DB_PASSWORD', '');
   define('DB_DATABASE', 'blog');
   
   define('BLOG_NAME','The Jets Blog');

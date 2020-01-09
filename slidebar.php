@@ -1,12 +1,12 @@
 <?php
-  require_once 'PhpRbac/autoload.php'; 
+ /*  require_once 'PhpRbac/autoload.php'; 
   if (!isset($g_page)) {
       $g_page = '';
   }
 
 	use PhpRbac\Rbac;
 	$rbac = new Rbac();
-	$role_id = $rbac->Roles->returnId('admin');
+	$role_id = $rbac->Roles->returnId('admin'); */
 
 session_start();
 ?>
