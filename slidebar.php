@@ -17,18 +17,19 @@ session_start();
 	  <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
 	  <a href="index.php" class="w3-bar-item w3-button w3-xlarge">Home</a>
 
-	<?php if(isset($_SESSION['username'])) {?>
-
+		<?php if(isset($_SESSION['username'])) { ?>
 				<a href="create.php" class="w3-bar-item w3-button w3-xlarge">New Post</a>
 				<a href="login_success.php" class="w3-bar-item w3-button w3-xlarge">Profile</a>
+				<?php
+				}
+				else {
+				?>
 				<a href="main_login.php" class="w3-bar-item w3-button w3-xlarge">Login</a>
 				<a href="register.php" class="w3-bar-item w3-button w3-xlarge">Register</a>
-	<?php
-	} 
-	?>
-
-				<a href="me.php" class="w3-bar-item w3-button w3-xlarge">About Me</a>
-
+				<?php
+	  		}
+	  		?>
+  			<a href="me.php" class="w3-bar-item w3-button w3-xlarge">About Me</a>
 </nav>
 
 	<div id="main">
