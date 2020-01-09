@@ -3,7 +3,7 @@
 <!-- Footer -->
 
 <footer class="w3-container w3-center w3-black w3-bottom">
-		<h6>Copyrights : 2019 | No right reserved</h6>
+		<h6>Copyrights : 2019 | No right reserved for dilawar</h6>
 </footer>
 
 <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
@@ -45,7 +45,7 @@ function myAccFunc(id) {
   var x = document.getElementById(id);
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
-  } else { 
+  } else {
     x.className = x.className.replace(" w3-show", "");
   }
 }
@@ -60,27 +60,27 @@ function plusDivs(n) {
 
 function showDivs(n) {
   var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
+  if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length} ;
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+    x[i].style.display = "none";
   }
-  x[slideIndex-1].style.display = "block";  
+  x[slideIndex-1].style.display = "block";
 }
 
 showDivs(1);
 
 // Progress Bars
 function move() {
-  var elem = document.getElementById("myBar");   
+  var elem = document.getElementById("myBar");
   var width = 5;
   var id = setInterval(frame, 10);
   function frame() {
     if (width == 100) {
       clearInterval(id);
     } else {
-      width++; 
-      elem.style.width = width + '%'; 
+      width++;
+      elem.style.width = width + '%';
       elem.innerHTML = width * 1  + '%';
     }
   }
